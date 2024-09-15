@@ -1,0 +1,40 @@
+.showComments {
+  background-color: #f4f4f4;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: #00a876;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+
+  .spinner {
+    display: none;
+    animation: spin 1s linear infinite;
+    vertical-align: middle;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  &.loading {
+    .text {
+      display: none;
+    }
+    .spinner {
+      display: inline-block;
+      width: fit-content;
+    }
+  }
+}

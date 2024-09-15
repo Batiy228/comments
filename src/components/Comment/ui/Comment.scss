@@ -1,0 +1,143 @@
+.comment {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 0.05rem solid #eaeaea;
+  position: relative;
+
+  &_pin {
+    color: #999999;
+    font-size: 0.625rem;
+  }
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 0.9rem;
+  }
+
+  &_user {
+    display: flex;
+  }
+
+  &_user-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_username {
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+
+  &_verified {
+    color: green;
+    margin-left: 0.5rem;
+  }
+
+  &_author-badge {
+    background-color: #e5f7eb;
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    color: #00a876;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    padding: 0.25em 0.5em;
+    border-radius: 0.75em;
+  }
+
+  &_time {
+    font-size: 0.75em;
+    color: #999;
+  }
+
+  &_options {
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 0.5rem;
+    text-align: center;
+    padding: 0.35rem 0.6rem;
+    padding-bottom: 0.6rem;
+
+    &:hover {
+      background-color: #f5f5f5;
+      border-radius: 50%;
+    }
+  }
+
+  &_body {
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+  }
+
+  &_actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_reply-button {
+    font-size: 0.75rem;
+    font-weight: 700;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+
+  &_vote {
+    display: flex;
+    align-items: center;
+  }
+
+  &_vote-up,
+  &_vote-down {
+    color: #d8d8d8;
+    background-color: #f4f4f4;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  &_vote-up.active {
+    color: #00a876;
+    background-color: #d9f2e0;
+  }
+
+  &_vote-down.active {
+    color: #ff003c;
+    background-color: #ffd9e2;
+  }
+
+  &_vote-count {
+    font-size: 1.14rem;
+    font-weight: 700;
+    color: #00a876;
+    margin: 0 1.5rem;
+  }
+
+  &.banned {
+    color: #999999;
+
+    .comment_avatar {
+      filter: blur(0.1em);
+      overflow: hidden;
+    }
+  }
+}

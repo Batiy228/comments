@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+        <rect class="line" height="2" width="18" x="0" y="0"></rect>
+        <rect class="line" height="2" width="18" x="0" y="5"></rect>
+        <rect class="line" height="2" width="18" x="0" y="10"></rect>
+    </svg>

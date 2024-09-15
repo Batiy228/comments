@@ -1,0 +1,103 @@
+.input-comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  &_input-block {
+    position: relative;
+  }
+
+  textarea {
+    font-size: 1rem;
+    width: 100%;
+    height: 3rem;
+    resize: none;
+    transition: height 0.2s ease-in-out, background-color 0.15s ease-in-out;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 1em;
+    padding: 0.85rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #eaeaea;
+    }
+
+    &.expanded {
+      cursor: text;
+      height: 6.5rem;
+      background-color: #fff;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:focus {
+      outline: none;
+      border: 0.05rem solid #eaeaea;
+    }
+  }
+
+  &_icons {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 0.85rem;
+    right: 1rem;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 1.5rem;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+    visibility: hidden;
+    margin-top: -0.3rem;
+    height: 0;
+    opacity: 0;
+    background-color: #fff;
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out,
+      background-color 0.5s ease-in-out;
+
+    &.expanded {
+      visibility: visible;
+      opacity: 1;
+      height: 4rem;
+      background-color: #f4f4f4;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      border: 0.05rem solid #eaeaea;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00a0f0;
+    }
+  }
+
+  &_add {
+    color: #fff;
+    background-color: #9b9b9b;
+    border: none;
+    border-radius: 1rem;
+    width: 6.375rem;
+    height: 2rem;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+    &.filled {
+      background-color: #4cc36f;
+    }
+  }
+}

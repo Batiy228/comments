@@ -1,0 +1,19 @@
+.parent-comment {
+  padding-left: 0.8rem;
+  border-left: 2px solid #eaeaea;
+  margin-top: 0.6rem;
+  font-weight: 400;
+  font-size: 0.87rem;
+  &_header {
+    display: flex;
+    color: #7f7f7f;
+  }
+  &_username {
+    font-weight: 500;
+    margin-left: 0.2rem;
+  }
+
+  &_body {
+    color: #505050;
+  }
+}
